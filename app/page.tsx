@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -33,14 +34,14 @@ export default function Home() {
               <strong className="font-medium text-foreground">
                 Torres Vedras
               </strong>
-              . Esta página é o ponto de partida do scaffold ENTRY-2 — sem
-              autenticação ainda.
+              . ENTRY-3 auth (magic link + perfil) está pronto — entra para
+              completar o onboarding.
             </p>
           </div>
 
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Button size="lg" className="w-full sm:w-auto" disabled>
-              Entrar em breve
+            <Button size="lg" className="w-full sm:w-auto" render={<Link href="/entrar" />}>
+              Entrar
             </Button>
             <Button
               size="lg"
@@ -55,7 +56,7 @@ export default function Home() {
           <ul className="space-y-2 rounded-xl border border-border bg-card p-4 text-sm text-muted-foreground">
             <li>
               <span className="font-medium text-foreground">Auth:</span> magic
-              link — mais tarde
+              link — ENTRY-3 pronto
             </li>
             <li>
               <span className="font-medium text-foreground">Listagens:</span>{" "}
@@ -70,7 +71,7 @@ export default function Home() {
       </main>
 
       <footer className="border-t border-border py-4 text-center text-xs text-muted-foreground">
-        Zona Oeste Trocas · ENTRY-2 Foundation
+        Zona Oeste Trocas · ENTRY-3 Auth + Profile
       </footer>
     </div>
   );
