@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [main, master, entry-2-foundation]
+    branches: [main, master, entry-2-foundation, entry-3-auth-profile]
   pull_request:
 
 jobs:
